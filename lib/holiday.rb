@@ -22,7 +22,7 @@ end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
   holiday_hash[:winter].each do |holiday, supply|
-    supplies.push(supply)
+    supplies << supply
   end
  # holiday_hash is identical to the one above
   # add the second argument, which is a supply, to BOTH the
