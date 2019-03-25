@@ -74,8 +74,9 @@ holiday-hash.map do |season, holiday|
     if supplies.include?("BBQ")
       holiday
     end
+      holiday.flatten.compact
   end
-  holiday.flatten.compact
+
     # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
 
