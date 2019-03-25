@@ -69,7 +69,14 @@ end# iterate through holiday_hash and print items such that your readout resembl
 end
 
 def all_holidays_with_bbq(holiday_hash)
-  # return an array of holiday names (as symbols) where supply lists
+holiday-hash.map do |season, holiday|
+  holiday.map do |holiday, supplies|
+    if supplies.include?("BBQ")
+      holiday
+    end
+  end
+  holiday.flatten
+    # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
 
 end
