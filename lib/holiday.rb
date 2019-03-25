@@ -48,8 +48,8 @@ end
 def all_winter_holiday_supplies(holiday_hash)
   holiday_hash[:winter].map do |holiday, supplies|
     supplies
-  end.flatten# return an array of all of the supplies that are used in the winter season
-
+  end# return an array of all of the supplies that are used in the winter season
+supplies.flatten
 end
 
 def all_supplies_in_holidays(holiday_hash)
